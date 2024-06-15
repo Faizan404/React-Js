@@ -9,6 +9,8 @@ export default function App() {
     const data = await res.json();
     setAdvice(data.slip.advice);
     setCount((c) => c + 1);
+
+    
   }
 
   useEffect(() => getAdvice, []);
